@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Feedback Form</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
+  <body class="bg-[#75e2e9] flex justify-center items-center h-screen">
+    <div class="bg-white p-8 shadow-lg rounded-lg w-[400px]">
+      <form action="">
+        <h1 class="text-3xl mb-4 font-[poppins] font-bold">Message:</h1>
+        <textarea
+          class="border-black border-2 w-full h-[200px] p-2"
+          id="te"
+          onkeyup="change(event)"
+          maxlength="200"
+        ></textarea>
+        <p class="mt-2 text-right">Remaining: <span id="sp"></span>/200</p>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
